@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="alertBox" class="alert-box"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Welcome, <span id="userName">User</span></h1>  <!-- User name will be dynamically inserted -->
+                <button class="options-button" id="optionsButton">☰</button>
+            </div>
+            <div class="account-details">
+                <h2>Account Balance: <span id="balance">$0</span></h2> <!-- Balance will be dynamically inserted -->
+                <button id="toggleBalance">Hide Balance</button>
+            </div>
+        </header>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card" id="electricity">
+                    <h3>Electricity</h3>
+                </div>
+                <div class="service-card" id="betting">
+                    <h3>Betting</h3>
+                </div>
+                <div class="service-card" id="events">
+                    <h3>Events</h3>
+                </div>
+                <div class="service-card" id="loans">
+                    <h3>Loans</h3>
+                </div>
+                <div class="service-card" id="investment">
+                    <h3>Investment</h3>
+                </div>
+                <div class="service-card" id="insurance">
+                    <h3>Insurance</h3>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Your Bank. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div class="side-panel" id="sidePanel">
+        <button class="close-button" id="closeButton">X</button>
+        <h2>Options</h2>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#" id="logoutButton">Log Out</a></li> <!-- Added ID for logout functionality -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
